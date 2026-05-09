@@ -100,8 +100,9 @@ header a:hover {
 .news {
     background-color: antiquewhite;
     color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     height: 95vh;
-    background-image: url("../images/evening_garden_party.png");
+    background-image: url("../images/evening_garden_party.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -116,7 +117,6 @@ header a:hover {
     margin-top: 60px;
 }
 .news p {
-    color: #fef7e6;
     font-size: 18px;
     margin: 25px 0;
 }
@@ -131,7 +131,7 @@ header a:hover {
 
 /* Slogan area: centered text, colored background */
 .slogan {
-    background-color: #485652;
+    background-color: #a85f43;
     color: white;
     height: 250px;
     display: flex;
@@ -184,7 +184,8 @@ header a:hover {
 /* Text info area beside the image */
 .info {
     width: 50%;
-    background-color: white;
+    color: white;
+    background-color: #203f36;
     display: flex;
     flex-direction: column;
     align-items: center;
