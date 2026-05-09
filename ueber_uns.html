@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Gartenparty 2025 in Kreuzlingen" />
+        <meta property="og:description" content="Genieße mit uns einen entspannten Sommerabend im Garten. Alle Infos und Anmeldung hier!" />
+        <meta property="og:image" content="https://gartenparty2025.netlify.app/images/social_preview.png" />
+        <meta property="og:url" content="https://gartenparty2025.netlify.app/" />
+        <meta property="og:type" content="website" />
+        <title data-i18n="ueber_uns_title">Über uns</title>
+        <!-- Import Inter font -->
+        <link rel="stylesheet" href="fonts/inter/inter.css" />
+        <!-- Library for animated hamburger menu icons -->
+        <link rel="stylesheet" href="css/hamburgers.css" />
+        <!-- Main site stylesheet -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- === Header: Site title and navigation === -->
+        <header>
+            <h1 data-i18n="ueber_uns_siteTitle">Gartenparty 2025</h1>
+
+            <!-- Hamburger menu button for mobile navigation -->
+            <button class="hamburger hamburger--slider" type="button" aria-label="Toggle navigation menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <!-- Main navigation menu -->
+            <nav id="main-nav">
+                <ul>
+                    <!-- Navigation links -->
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="ueber_uns.html" data-i18n="about">Über uns</a></li>
+                    <li><a href="ort_und_anfahrt.html" data-i18n="location">Ort & Anfahrt</a></li>
+                    <li class="lang-switch">
+                        <button class="lang-btn" data-lang="de" title="Deutsch">
+                            <img src="images/flag_de.svg" alt="Deutsch" class="flag-icon" />
+                        </button>
+                        <button class="lang-btn" data-lang="en" title="English">
+                            <img src="images/flag_gb.svg" alt="English" class="flag-icon" />
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- === End Header === -->
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <main>
+                    <!-- Empty section for visual spacing -->
+                    <section class="filling"></section>
+
+                    <!-- Introducing the people in the house -->
+                    <section class="highlights">
+                        <!-- Hannah's profile -->
+                        <div class="highlight-item">
+                            <img src="images/EG.jpg" alt="Erdgeschoss" />
+                            <h3 data-i18n="hannahName">Hannah</h3>
+                            <p data-i18n="hannahDesc">
+                                Hannah wohnt am längsten in der Remisbergstrasse im <strong>Erdgeschoss</strong>. Sie ist gerne unterwegs – ob auf Reisen, beim Social Run Club oder beim CrossFit und
+                                sagt zu einer Runde Rage Cage nie nein.
+                            </p>
+                        </div>
+
+                        <!-- Sven & Pauli's profile -->
+                        <div class="highlight-item">
+                            <img src="images/St1.jpg" alt="1. Stock" />
+                            <h3 data-i18n="svenpauliName">Sven & Pauli</h3>
+                            <p data-i18n="svenpauliDesc">
+                                Sven und Pauli sind die Neuesten im Haus und wohnen im <strong>1. Stock</strong>. Sie sind gern aktiv – ob beim Bouldern, Wandern oder Fahrrad fahren - und haben seit
+                                ihrem Einzug den Garten neu gestaltet.
+                            </p>
+                        </div>
+
+                        <!-- Chin-I & Simone's profile -->
+                        <div class="highlight-item">
+                            <img src="images/St2.jpg" alt="2. Stock" />
+                            <h3 data-i18n="chinisimoneName">Chin-I & Simone</h3>
+                            <p data-i18n="chinisimoneDesc">
+                                Chin-I und Simone wohnen im <strong>2. Stock</strong>. Während Simone beim CrossFit alles gibt, spielt Chin-I lieber Basketball. Beide kochen gerne und sind beim
+                                Beerpong immer für ein Match zu haben.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Welcome message section at the bottom -->
+                    <section class="slogan" style="background: #ede9db">
+                        <p class="slogan-text" style="color: #000" data-i18n="welcome">
+                            <strong>
+                                Wir freuen uns darauf <br />
+                                mit dir eine tolle Zeit zu haben!
+                            </strong>
+                        </p>
+                    </section>
+                </main>
+
+                <!-- Copyright information -->
+                <footer>
+                    <p data-i18n="copyright">Copyright © 2025 Gartenparty-Remisbergstrasse</p>
+                </footer>
+
+                <!-- Import GSAP core and animation plugins -->
+                <script src="js/gsap.min.js"></script>
+                <script src="js/ScrollTrigger.min.js"></script>
+                <script src="js/scroll_animations.js"></script>
+
+                <!-- Import GSAP ScrollSmoother plugin -->
+                <script src="js/ScrollSmoother.min.js"></script>
+                <script src="js/scroll_smooth.js"></script>
+
+                <!-- Import custom script for hamburger menu functionality -->
+                <script src="js/hamburger_menu.js"></script>
+
+                <!-- Import language switcher script for multi-language support -->
+                <script src="js/language_switcher.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

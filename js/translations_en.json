@@ -1,0 +1,65 @@
+{
+    "home": "Home",
+    "about": "About us",
+    "location": "Location",
+    "copyright": "Copyright © 2025 Gartenparty-Remisbergstrasse",
+
+    "newsTitle": "Party on July 12th!",
+    "newsText": "Join us for a relaxing evening with good food, music, and the best company",
+    "cta": "Yes, I'm coming",
+
+    "slogan": "“Let's celebrate together and enjoy <br />summer in our garden in Kreuzlingen”",
+
+    "eventTitle": "Cozy Garden Party on July 12, 2025",
+    "eventDetails": "The party starts on <span style=\"color: #197b30; font-weight: bold\">Saturday, July 12</span> at <span style=\"color: #d97325; font-weight: bold\">5 PM</span> in our garden in Kreuzlingen.<br />Snacks, salads, baguette, sauces, gluten-free bread and drinks will be provided.<br />Feel free to bring your own BBQ items.<br />",
+    "googleCalBtn": "Google Calendar",
+    "appleCalBtn": "iPhone Calendar",
+
+    "drinksTitle": "Refreshing Drinks",
+    "drinksDesc": "Cool drinks and cocktails, freshly mixed for the perfect summer refreshment.<br />Ideal for quenching your thirst on warm days",
+    "grillTitle": "Tasty Barbecue",
+    "grillDesc": "Hearty skewers, crunchy sausages, and fresh vegetables from the grill.<br />Perfect for a cozy summer evening",
+    "gamesTitle": "Garden Games",
+    "gamesDesc": "Fun and entertainment with drinking games like beer pong or flunkyball.<br />Laughter and good vibes guaranteed",
+
+    "rsvpTitle": "Please let us know!",
+    "rsvpText": "We're happy if you can join.<br />Please fill out the form so we can plan.",
+    "honeypot": "Do not fill this out if you're human:",
+    "nameLabel": "Your Name<span style='color: red'>*</span>",
+    "emailLabel": "Your Email<span style='color: red'>*</span>",
+    "attendLabel": "Are you coming to the party?<span style='color: red'>*</span>",
+    "overnightLabel": "Will you stay overnight?<span style='color: red'>*</span>",
+    "yes": "Yes",
+    "no": "No",
+    "restrictionsLabel": "What don't you like?",
+    "meat": "Meat",
+    "gluten": "Gluten",
+    "nonalcohol": "Non-alcoholic beer",
+    "other": "Other:",
+    "msgLabel": "Message / Wishes:",
+    "placeholderOther": "Please enter",
+    "submitBtn": "Send",
+
+    "ueber_uns_title": "About us",
+    "ueber_uns_siteTitle": "Garden Party 2025",
+    "hannahName": "Hannah",
+    "hannahDesc": "Hannah has lived the longest at Remisbergstrasse on the <strong>ground floor</strong>. She loves to travel, take part in the Social Run Club or do CrossFit, and never says no to a round of Rage Cage.",
+    "svenpauliName": "Sven & Pauli",
+    "svenpauliDesc": "Sven and Pauli are the newest in the house and live on the <strong>1st floor</strong>. They love being active – whether it's bouldering, hiking or cycling – and have redesigned the garden since moving in.",
+    "chinisimoneName": "Chin-I & Simone",
+    "chinisimoneDesc": "Chin-I and Simone live on the <strong>2nd floor</strong>. While Simone gives it her all in CrossFit, Chin-I prefers basketball. Both love to cook and are always up for a game of beer pong.",
+    "welcome": "<strong>We're looking forward to <br />having a great time with you!</strong>",
+
+    "ort_und_anfahrt_title": "Location",
+    "ort_und_anfahrt_siteTitle": "Garden Party 2025",
+    "partyLocationHeading": "Party Location",
+    "partyLocationDesc": "<strong>Remisbergstrasse 3, 8280 Kreuzlingen,<br />Thurgau, Switzerland</strong><br />Well connected by bus and train.<br /><a id='parking-link' style='color: #197bff; text-decoration: underline; cursor: pointer'>Parking</a> is available nearby.",
+    "travelWish": "We wish you a pleasant journey<br />see you soon at the garden party!",
+
+    "parkingInfoTitle": "Parking",
+    "parkingInfoBody": "<ul style='margin-left:1em; padding-left:0; list-style-type: disc;'><li style='margin-bottom:0.5em;'>Bärenplatz parking <a href='https://maps.app.goo.gl/fsKnvLbEUrAqQUud8' target='_blank' style='margin-left:0.5em; font-size:110%; text-decoration:none;'>📍</a></li><li style='margin-bottom:0.7em;'>Oberer Schulweg parking <a href='https://maps.app.goo.gl/WwTjNm3xY5pQ4fhNA' target='_blank' style='margin-left:0.5em; font-size:110%; text-decoration:none;'>📍</a></li><li>Overnight guests can park for free directly at our place.</li></ul><div style='margin-top:1.2em; font-size:90%; color:#555;'><b>Paid parking:</b> Daily 7:00 a.m.–8:00 p.m., 1 CHF per hour.<br><b>Tip:</b> You can conveniently pay with the EasyPark app.</div>",
+    "parkingInfoButton": "Close",
+
+    "closedTitle": "Registration closed",
+    "closedBody": "Registration for the party is no longer possible. The form was open until Sunday, July 6, 2025, 11:59 PM."
+}
