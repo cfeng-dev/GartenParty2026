@@ -1,101 +1,3 @@
-/* ----- Font Family Global Definition ----- */
-/* html,
-body,
-button,
-input,
-textarea {
-    font-family: "Inter", Arial, sans-serif;
-} */
-
-/* ----- PC Standard Styles ----- */
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    /* overflow-x: hidden; */
-}
-
-/* Reset margin and padding for all elements */
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: #000000;
-    visibility: hidden; /* Hide body until translations are loaded (prevents FOUT!) */
-}
-
-/* Header: fixed at the top, with semi-transparent background */
-header {
-    background-color: rgba(35, 28, 26, 0.8);
-    height: 60px;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center; /* vertical center */
-    z-index: 1000;
-}
-h1 {
-    color: white;
-    position: absolute;
-    left: 120px;
-    top: 0;
-    line-height: 80px;
-    /* background-image: url(images/logo); */
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 210px;
-    text-indent: -9999px;
-}
-
-/* Navigation list inside the header */
-header ul {
-    position: absolute;
-    right: 5vw;
-    top: 0;
-    line-height: 60px;
-}
-header li {
-    display: inline;
-    margin-right: 4vw;
-}
-header a {
-    color: white;
-    text-decoration: none;
-}
-header a:hover {
-    text-decoration: underline;
-}
-
-/* Container for language switch in navigation */
-.lang-switch {
-    display: inline;
-    /* margin-left: 20px; */
-}
-
-/* Language flag icon styling */
-.flag-icon {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    vertical-align: middle;
-    display: inline-block;
-}
-.lang-btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: 6px;
-    transition: filter 0.2s;
-    padding: 0;
-}
-.lang-btn:hover,
-.lang-btn.active {
-    filter: brightness(0.8); /* Darken flag icon when hovered or active */
-}
-
 /* Slogan area: centered text, colored background */
 .slogan {
     background-color: #ede9db;
@@ -161,37 +63,8 @@ header a:hover {
     line-height: 1.6em;
 }
 
-footer {
-    background-color: #000000;
-    color: #b7b7b7;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-}
-
-/* --- Desktop Navigation --- */
-#main-nav {
-    display: block;
-    position: static;
-    width: auto;
-    height: auto;
-    background: transparent;
-    opacity: 1;
-}
-/* --- Hamburger icon nur mobile anzeigen --- */
-.hamburger {
-    display: none;
-}
-
 /* ====== Tablet Optimization ====== */
 @media screen and (min-width: 601px) and (max-width: 1025px) {
-    /* Smooth scrolling on anchors */
-    html {
-        scroll-behavior: smooth;
-    }
-
     /* Highlights: stack vertically on tablet */
     .highlights {
         flex-direction: column;
@@ -230,27 +103,6 @@ footer {
 
 /* ====== Mobile Optimization ====== */
 @media screen and (max-width: 600px) {
-    /* Smooth scrolling on anchors */
-    html {
-        scroll-behavior: smooth;
-    }
-
-    header {
-        background-color: rgba(35, 28, 26, 0.8);
-        height: 60px;
-        width: 100%;
-        position: fixed;
-        display: flex;
-        align-items: center; /* vertical center */
-    }
-    header ul {
-        display: none;
-    }
-    header h1 {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
     /* Slogan: more compact on mobile */
     .slogan {
         font-size: 1.1em;
@@ -301,74 +153,5 @@ footer {
         height: auto;
         margin: 0 auto;
         display: block;
-    }
-
-    footer {
-        font-size: 12px;
-        text-align: center;
-        height: auto;
-        padding: 16px 0;
-    }
-
-    /* Hamburger menu button visible and fixed in corner on mobile */
-    .hamburger {
-        display: block;
-        position: fixed;
-        right: 1%;
-        z-index: 2000; /* higher than the menu (e.g. 2000 > 1100) */
-    }
-
-    /* Fullscreen Styles (mobile only) */
-    #main-nav {
-        display: none; /* Hide by default */
-        position: fixed;
-        inset: 0; /* Fill whole viewport */
-        width: 100vw;
-        height: 100vh;
-        background: rgba(30, 30, 30, 0.97);
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        z-index: 1100;
-        opacity: 0; /* initially invisible, is animated by GSAP */
-        transition: none; /* Transition only via GSAP, no CSS transitions necessary */
-    }
-    #main-nav.open {
-        display: flex; /* Show when menu is open */
-        opacity: 1;
-    }
-    #main-nav ul {
-        position: static;
-        right: auto;
-        top: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-        margin-bottom: 60%;
-        padding: 0;
-        list-style: none;
-    }
-    #main-nav li {
-        font-size: 1.8rem;
-        margin-right: 0;
-        margin-bottom: 0;
-        line-height: 50px;
-    }
-
-    #main-nav a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.2s;
-    }
-    #main-nav a:hover {
-        color: #f7c873;
-    }
-
-    /* Lock scroll when mobile menu is open */
-    body.menu-open,
-    html.menu-open {
-        overflow: hidden;
     }
 }
