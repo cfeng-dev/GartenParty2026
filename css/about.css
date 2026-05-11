@@ -18,18 +18,6 @@
     max-width: 700px;
 }
 
-/* Placeholder for layout spacing */
-.filling {
-    background-color: white;
-    color: white;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    line-height: 1.8em;
-}
-
 /* Hosts section: event hosts, side by side boxes */
 .hosts {
     display: flex;
@@ -37,7 +25,7 @@
     justify-content: center;
     align-items: center;
     align-items: stretch; /* All children are raised equally */
-    padding: 100px 120px 80px; /* top, left and right, bottom */
+    padding: 160px 120px 80px; /* top, left and right, bottom */
     gap: 12%;
 }
 .hosts div {
@@ -109,24 +97,12 @@
         text-align: center;
     }
 
-    /* Placeholder for layout spacing */
-    .filling {
-        background-color: white;
-        color: white;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        line-height: 1.8em;
-    }
-
-    /* Highlights: stack vertically on mobile */
+    /* Hosts: stack vertically on mobile */
     .hosts {
         flex-direction: column;
         align-items: center; /* Centers the boxes horizontally */
         justify-content: center;
-        padding: 60px 5vw 30px 5vw; /* top right bottom left */
+        padding: 120px 5vw 30px 5vw; /* top right bottom left */
     }
     .hosts div {
         margin-bottom: 30px; /* Distance between the individual boxes */
