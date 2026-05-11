@@ -8,19 +8,19 @@
         <meta property="og:image" content="https://gartenparty2026.netlify.app/images/social_preview.png" />
         <meta property="og:url" content="https://gartenparty2026.netlify.app/" />
         <meta property="og:type" content="website" />
-        <title data-i18n="ueber_uns_title">Über uns</title>
+        <title data-i18n="ort_und_anfahrt_title">Ort & Anfahrt</title>
         <!-- Import Inter font -->
         <link rel="stylesheet" href="fonts/inter/inter.css" />
         <!-- Library for animated hamburger menu icons -->
         <link rel="stylesheet" href="css/hamburgers.css" />
         <!-- Main site stylesheet -->
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/location.css" />
     </head>
     <body>
         <!-- === Header: Site title and navigation === -->
         <header>
-            <h1 data-i18n="ueber_uns_siteTitle">Gartenparty 2026</h1>
+            <h1 data-i18n="ort_und_anfahrt_siteTitle">Gartenparty 2026</h1>
 
             <!-- Hamburger menu button for mobile navigation -->
             <button class="hamburger hamburger--slider" type="button" aria-label="Toggle navigation menu">
@@ -34,8 +34,8 @@
                 <ul>
                     <!-- Navigation links -->
                     <li><a href="index.html" data-i18n="home">Home</a></li>
-                    <li><a href="ueber_uns.html" data-i18n="about">Über uns</a></li>
-                    <li><a href="ort_und_anfahrt.html" data-i18n="location">Ort & Anfahrt</a></li>
+                    <li><a href="about.html" data-i18n="about">Über uns</a></li>
+                    <li><a href="location.html" data-i18n="location">Ort & Anfahrt</a></li>
                     <li class="lang-switch">
                         <button class="lang-btn" data-lang="de" title="Deutsch">
                             <img src="images/flag_de.svg" alt="Deutsch" class="flag-icon" />
@@ -55,46 +55,39 @@
                     <!-- Empty section for visual spacing -->
                     <section class="filling"></section>
 
-                    <!-- Introducing the people in the house -->
-                    <section class="highlights">
-                        <!-- Hannah's profile -->
-                        <div class="highlight-item">
-                            <img src="images/EG.jpg" alt="Erdgeschoss" />
-                            <h3 data-i18n="hannahName">Hannah</h3>
-                            <p data-i18n="hannahDesc">
-                                Hannah wohnt am längsten in der Remisbergstrasse im <strong>Erdgeschoss</strong>. Sie ist gerne unterwegs – ob auf Reisen, beim Social Run Club oder beim CrossFit und
-                                sagt zu einer Runde Rage Cage nie nein.
+                    <!-- Location information and Google Maps embed section -->
+                    <section class="event_info">
+                        <!-- Text info about the party location -->
+                        <div class="info">
+                            <h2 data-i18n="partyLocationHeading">Ort der Gartenparty</h2>
+                            <p data-i18n="partyLocationDesc">
+                                <strong>
+                                    Remisbergstrasse 3, 8280 Kreuzlingen,<br />
+                                    Thurgau, Schweiz
+                                </strong>
+                                <br />
+                                Gute Anbindung mit Bus und Bahn.<br />
+                                <a id="parking-link" style="color: #197bff; text-decoration: underline; cursor: pointer">Parkplätze</a> sind in der Nähe vorhanden.
                             </p>
                         </div>
 
-                        <!-- Sven & Pauli's profile -->
-                        <div class="highlight-item">
-                            <img src="images/St1.jpg" alt="1. Stock" />
-                            <h3 data-i18n="svenpauliName">Sven & Pauli</h3>
-                            <p data-i18n="svenpauliDesc">
-                                Sven und Pauli sind die Neuesten im Haus und wohnen im <strong>1. Stock</strong>. Sie sind gern aktiv – ob beim Bouldern, Wandern oder Fahrrad fahren - und haben seit
-                                ihrem Einzug den Garten neu gestaltet.
-                            </p>
-                        </div>
-
-                        <!-- Chin-I & Simone's profile -->
-                        <div class="highlight-item">
-                            <img src="images/St2.jpg" alt="2. Stock" />
-                            <h3 data-i18n="chinisimoneName">Chin-I & Simone</h3>
-                            <p data-i18n="chinisimoneDesc">
-                                Chin-I und Simone wohnen im <strong>2. Stock</strong>. Während Simone beim CrossFit alles gibt, spielt Chin-I lieber Basketball. Beide kochen gerne und sind beim
-                                Beerpong immer für ein Match zu haben.
-                            </p>
-                        </div>
+                        <!-- Google Maps iframe for visual directions -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.7955393533377!2d8.815618115750135!3d47.66016367918979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900fb21de8a5e1%3A0x194ab7b53c1e77bb!2sRemisbergstrasse%203%2C%208280%20Kreuzlingen%2C%20Schweiz!5e0!3m2!1sde!2sch!4v1685632990617!5m2!1sde!2sch"
+                            width="890"
+                            height="634"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
                     </section>
 
                     <!-- Welcome message section at the bottom -->
                     <section class="slogan">
-                        <p class="slogan-text" data-i18n="welcome">
-                            <strong>
-                                Wir freuen uns darauf <br />
-                                mit dir eine tolle Zeit zu haben!
-                            </strong>
+                        <p class="slogan-text" data-i18n="travelWish">
+                            Wir wünschen dir eine angenehme Anreise<br />
+                            komm gut an und bis bald bei der Gartenparty!
                         </p>
                     </section>
                 </main>
@@ -104,10 +97,9 @@
                     <p data-i18n="copyright">Copyright © 2026 Gartenparty-Remisbergstrasse</p>
                 </footer>
 
-                <!-- Import GSAP core and animation plugins -->
+                <!-- Import GSAP animation library -->
                 <script src="js/gsap.min.js"></script>
                 <script src="js/ScrollTrigger.min.js"></script>
-                <script src="js/scroll_animations.js"></script>
 
                 <!-- Import GSAP ScrollSmoother plugin -->
                 <script src="js/ScrollSmoother.min.js"></script>
@@ -118,6 +110,27 @@
 
                 <!-- Import language switcher script for multi-language support -->
                 <script src="js/language_switcher.js"></script>
+
+                <!-- Import SweetAlert2 for nice info popups -->
+                <script src="js/sweetalert2.all.min.js"></script>
+
+                <script>
+                    // Registers the click handler for the parking info popup
+                    function ParkingInfoHandler() {
+                        var link = document.getElementById("parking-link");
+                        if (link) {
+                            link.onclick = function (e) {
+                                e.preventDefault();
+                                Swal.fire({
+                                    title: translations.parkingInfoTitle,
+                                    html: "<div style='text-align:left;'>" + translations.parkingInfoBody + "</div>",
+                                    icon: "info",
+                                    confirmButtonText: translations.parkingInfoButton,
+                                });
+                            };
+                        }
+                    }
+                </script>
             </div>
         </div>
     </body>
