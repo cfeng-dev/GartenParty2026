@@ -1,5 +1,5 @@
 /* Slogan area: centered text, colored background */
-.slogan {
+.travelWish {
     background-color: #045322;
     color: white;
     height: 250px;
@@ -9,13 +9,7 @@
     font-size: 20px;
     line-height: 1.8em;
 }
-.slogan blockquote {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    padding: 30px 10px; /* top/bottom and side spacing */
-    font-weight: 360;
-}
-.slogan-text {
+.travelWish-text {
     text-align: center;
     font-size: 1.2em;
     line-height: 1.7;
@@ -115,18 +109,13 @@
 
 /* ====== Mobile Optimization ====== */
 @media screen and (max-width: 600px) {
-    /* Slogan: more compact on mobile */
-    .slogan {
+    /* travelWish: more compact on mobile */
+    .travelWish {
         font-size: 1.1em;
         height: auto;
         padding: 25px 0;
     }
-    .slogan blockquote {
-        font-size: 1.1em;
-        padding: 0 12px;
-        text-align: center;
-    }
-    .slogan-text {
+    .travelWish-text {
         font-size: 1em;
         padding: 0 8px;
         text-align: center;

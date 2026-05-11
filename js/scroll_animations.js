@@ -27,6 +27,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Animate each host-card when it enters the viewport
+    if (document.querySelector(".host-card")) {
+        gsap.utils.toArray(".host-card").forEach((item, i) => {
+            gsap.from(item, {
+                opacity: 0,
+                y: 60,
+                duration: 1.2,
+                delay: i * 0.1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 100%",
+                    toggleActions: "play none none none",
+                },
+            });
+        });
+    }
+
     if (document.querySelector(".slogan-text")) {
         gsap.from(".slogan-text", {
             opacity: 0,
@@ -35,6 +53,34 @@ document.addEventListener("DOMContentLoaded", function () {
             ease: "back.out(1.3)",
             scrollTrigger: {
                 trigger: ".slogan-text",
+                start: "top 99%",
+                toggleActions: "play none none none",
+            },
+        });
+    }
+
+    if (document.querySelector(".welcome-text")) {
+        gsap.from(".welcome-text", {
+            opacity: 0,
+            y: 40,
+            duration: 1.1,
+            ease: "back.out(1.3)",
+            scrollTrigger: {
+                trigger: ".welcome-text",
+                start: "top 99%",
+                toggleActions: "play none none none",
+            },
+        });
+    }
+
+    if (document.querySelector(".travelWish-text")) {
+        gsap.from(".travelWish-text", {
+            opacity: 0,
+            y: 40,
+            duration: 1.1,
+            ease: "back.out(1.3)",
+            scrollTrigger: {
+                trigger: ".travelWish-text",
                 start: "top 99%",
                 toggleActions: "play none none none",
             },

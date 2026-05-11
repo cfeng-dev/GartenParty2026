@@ -1,5 +1,5 @@
-/* Slogan area: centered text, colored background */
-.slogan {
+/* welcome area: centered text, colored background */
+.welcome {
     background-color: #ede9db;
     color: white;
     height: 250px;
@@ -9,13 +9,7 @@
     font-size: 20px;
     line-height: 1.8em;
 }
-.slogan blockquote {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    padding: 30px 10px; /* top/bottom and side spacing */
-    font-weight: 360;
-}
-.slogan-text {
+.welcome-text {
     color: black;
     text-align: center;
     font-size: 1.2em;
@@ -36,8 +30,8 @@
     line-height: 1.8em;
 }
 
-/* Highlights section: event highlights, side by side boxes */
-.highlights {
+/* Hosts section: event hosts, side by side boxes */
+.hosts {
     display: flex;
     background-color: #ede9db;
     justify-content: center;
@@ -46,33 +40,33 @@
     padding: 100px 120px 80px; /* top, left and right, bottom */
     gap: 12%;
 }
-.highlights div {
+.hosts div {
     width: 300px;
     text-align: center;
 }
-.highlights img {
+.hosts img {
     width: 100%;
     border-radius: 10px;
 }
-.highlights h3 {
+.hosts h3 {
     font-size: 20px;
     margin: 20px 0;
 }
-.highlights p {
+.hosts p {
     font-size: 14px;
     line-height: 1.6em;
 }
 
 /* ====== Tablet Optimization ====== */
 @media screen and (min-width: 601px) and (max-width: 1025px) {
-    /* Highlights: stack vertically on tablet */
-    .highlights {
+    /* Hosts: stack vertically on tablet */
+    .hosts {
         flex-direction: column;
         align-items: center; /* Centers the boxes horizontally */
         justify-content: center;
         padding: 60px 5vw 30px 5vw; /* top right bottom left */
     }
-    .highlights div {
+    .hosts div {
         margin-bottom: 66px; /* Distance between the individual boxes */
         width: 100%;
         max-width: 80%; /* Maximum as wide as the image */
@@ -80,18 +74,18 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .highlights img {
+    .hosts img {
         width: 100%;
         max-width: 72%; /* wide of the image */
         height: auto;
         margin: 0 auto;
         display: block;
     }
-    .highlights h3 {
+    .hosts h3 {
         font-size: 20px;
         margin: 20px 0;
     }
-    .highlights p {
+    .hosts p {
         font-size: 15px;
         line-height: 1.6em;
         max-width: 63%; /* <-- narrower than image */
@@ -103,18 +97,13 @@
 
 /* ====== Mobile Optimization ====== */
 @media screen and (max-width: 600px) {
-    /* Slogan: more compact on mobile */
-    .slogan {
+    /* welcome: more compact on mobile */
+    .welcome {
         font-size: 1.1em;
         height: auto;
         padding: 25px 0;
     }
-    .slogan blockquote {
-        font-size: 1.1em;
-        padding: 0 12px;
-        text-align: center;
-    }
-    .slogan-text {
+    .welcome-text {
         font-size: 1em;
         padding: 0 8px;
         text-align: center;
@@ -133,13 +122,13 @@
     }
 
     /* Highlights: stack vertically on mobile */
-    .highlights {
+    .hosts {
         flex-direction: column;
         align-items: center; /* Centers the boxes horizontally */
         justify-content: center;
         padding: 60px 5vw 30px 5vw; /* top right bottom left */
     }
-    .highlights div {
+    .hosts div {
         margin-bottom: 30px; /* Distance between the individual boxes */
         width: 100%;
         max-width: 300px; /* Maximum as wide as the image */
@@ -147,7 +136,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .highlights img {
+    .hosts img {
         width: 100%;
         max-width: 300px; /* wide of the image */
         height: auto;
