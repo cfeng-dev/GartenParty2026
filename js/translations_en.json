@@ -40,8 +40,8 @@
     "placeholderOther": "Please enter",
     "submitBtn": "Send",
 
-    "ueber_uns_title": "About us",
-    "ueber_uns_siteTitle": "Garden Party 2026",
+    "about_title": "About us",
+    "about_siteTitle": "Garden Party 2026",
     "hannahName": "Hannah",
     "hannahDesc": "Hannah has lived the longest at Remisbergstrasse on the <strong>ground floor</strong>. She loves to travel, take part in the Social Run Club or do CrossFit, and never says no to a round of Rage Cage.",
     "svenpauliName": "Sven & Pauli",
@@ -50,8 +50,8 @@
     "chinisimoneDesc": "Chin-I and Simone live on the <strong>2nd floor</strong>. While Simone gives it her all in CrossFit, Chin-I prefers basketball. Both love to cook and are always up for a game of beer pong.",
     "welcome": "<strong>We're looking forward to <br />having a great time with you!</strong>",
 
-    "ort_und_anfahrt_title": "Location",
-    "ort_und_anfahrt_siteTitle": "Garden Party 2026",
+    "location_title": "Location",
+    "location_siteTitle": "Garden Party 2026",
     "partyLocationHeading": "Party Location",
     "partyLocationDesc": "<strong>Remisbergstrasse 3, 8280 Kreuzlingen,<br />Thurgau, Switzerland</strong><br />Well connected by bus and train.<br /><a id='parking-link' style='color: #197bff; text-decoration: underline; cursor: pointer'>Parking</a> is available nearby.",
     "travelWish": "We wish you a pleasant journey<br />see you soon at the garden party!",

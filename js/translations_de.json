@@ -40,8 +40,8 @@
     "msgLabel": "Nachricht / Wünsche:",
     "submitBtn": "Absenden",
 
-    "ueber_uns_title": "Über uns",
-    "ueber_uns_siteTitle": "Gartenparty 2026",
+    "about_title": "Über uns",
+    "about_siteTitle": "Gartenparty 2026",
     "hannahName": "Hannah",
     "hannahDesc": "Hannah wohnt am längsten in der Remisbergstrasse im <strong>Erdgeschoss</strong>. Sie ist gerne unterwegs – ob auf Reisen, beim Social Run Club oder beim CrossFit und sagt zu einer Runde Rage Cage nie nein.",
     "svenpauliName": "Sven & Pauli",
@@ -50,8 +50,8 @@
     "chinisimoneDesc": "Chin-I und Simone wohnen im <strong>2. Stock</strong>. Während Simone beim CrossFit alles gibt, spielt Chin-I lieber Basketball. Beide kochen gerne und sind beim Beerpong immer für ein Match zu haben.",
     "welcome": "<strong>Wir freuen uns darauf <br />mit dir eine tolle Zeit zu haben!</strong>",
 
-    "ort_und_anfahrttitle": "Ort & Anfahrt",
-    "ort_und_anfahrtsiteTitle": "Gartenparty 2026",
+    "location_title": "Ort & Anfahrt",
+    "location_siteTitle": "Gartenparty 2026",
     "partyLocationHeading": "Ort der Gartenparty",
     "partyLocationDesc": "<strong>Remisbergstrasse 3, 8280 Kreuzlingen,<br />Thurgau, Schweiz</strong><br />Gute Anbindung mit Bus und Bahn.<br /><a id='parking-link' style='color: #197bff; text-decoration: underline; cursor: pointer'>Parkplätze</a> sind in der Nähe vorhanden.",
     "travelWish": "Wir wünschen dir eine angenehme Anreise<br />komm gut an und bis bald bei der Gartenparty!",
