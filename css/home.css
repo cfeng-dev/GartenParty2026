@@ -260,6 +260,23 @@ form.party-form textarea:focus {
     background-color: #2a2f34;
 }
 
+/* Info icon beside overnight question */
+#overnight-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-left: 3px;
+    cursor: pointer;
+    vertical-align: -5px;
+}
+
+#overnight-info img {
+    width: 21px;
+    height: 21px;
+}
+
 /* ====== Tablet Optimization ====== */
 @media screen and (min-width: 601px) and (max-width: 1025px) {
     /* Event info: stack vertically on tablet */

@@ -52,7 +52,7 @@
         flex-direction: column;
         align-items: center; /* Centers the boxes horizontally */
         justify-content: center;
-        padding: 60px 5vw 30px 5vw; /* top right bottom left */
+        padding: 120px 5vw 30px 5vw; /* top right bottom left */
     }
     .hosts div {
         margin-bottom: 66px; /* Distance between the individual boxes */
