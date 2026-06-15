@@ -9,7 +9,7 @@ let translations = {};
 
 // Loads the translation JSON for the selected language
 function loadTranslations(lang, callback) {
-    fetch(`js/translations_${lang}.json`)
+    fetch(`config/translations_${lang}.json`)
         .then((res) => res.json())
         .then((data) => {
             translations = data;
@@ -41,6 +41,11 @@ function switchLanguage(lang) {
 
         // Save the user's language preference in localStorage
         localStorage.setItem("lang", lang);
+
+        // Refresh generated calendar links after language switch
+        if (typeof refreshCalendarLinks === "function") {
+            refreshCalendarLinks();
+        }
 
         // Register the click handler for the parking info popup after language switch
         if (typeof ParkingInfoHandler === "function") {

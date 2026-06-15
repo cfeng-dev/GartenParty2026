@@ -1,0 +1,20 @@
+{
+    "title": {
+        "en": "Garden Party 2026",
+        "de": "Gartenparty 2026"
+    },
+    "details": {
+        "en": "Event website: https://gartenparty2026.netlify.app",
+        "de": "Event-Website: https://gartenparty2026.netlify.app"
+    },
+    "location": {
+        "en": "Remisbergstrasse 3, 8280 Kreuzlingen, Switzerland",
+        "de": "Remisbergstrasse 3, 8280 Kreuzlingen, Schweiz"
+    },
+    "start": "2026-06-20T15:00:00Z",
+    "end": "2026-06-20T23:00:00Z",
+    "timezone": "Europe/Zurich",
+    "reminderMinutes": 1440,
+
+    "rsvpDeadline": "2026-06-15T23:59:59+02:00"
+}

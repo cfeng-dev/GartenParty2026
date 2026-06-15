@@ -77,19 +77,16 @@
                                 Bring gern eigenes Grillgut mit.<br />
                             </p>
 
-                            <!-- Google Kalender-Button -->
-                            <a
-                                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Gartenparty+in+Kreuzlingen&dates=20260620T150000Z/20260620T230000Z&details=https://gartenparty2026.netlify.app&location=Remisbergstrasse+3,+8280+Kreuzlingen,+Schweiz&ctz=Europe/Zurich"
-                                target="_blank"
-                                class="calendar-btn google"
-                            >
+                            <!-- Google Calendar button -->
+                            <a id="google-calendar-link" href="#" target="_blank" rel="noopener" class="calendar-btn google">
                                 <img src="images/icon_google.svg" alt="Google Icon" style="width: 27px; height: 27px; margin-right: 0px" />
-                                <span data-i18n="googleCalBtn">Google Kalender</span>
+                                <span data-i18n="googleCalBtn">Google Calendar</span>
                             </a>
-                            <!-- iPhone Kalender-Button -->
-                            <a href="calendar/gartenparty2026.ics" target="_blank" rel="noopener" class="calendar-btn apple"
-                                ><img src="images/icon_apple.svg" alt="Apple Icon" style="width: 27px; height: 27px; margin-right: 0px" />
-                                <span data-i18n="appleCalBtn">iPhone Kalender</span>
+
+                            <!-- Apple Calendar button -->
+                            <a id="apple-calendar-link" href="#" download="gartenparty2026.ics" class="calendar-btn apple">
+                                <img src="images/icon_apple.svg" alt="Apple Icon" style="width: 27px; height: 27px; margin-right: 0px" />
+                                <span data-i18n="appleCalBtn">iPhone Calendar</span>
                             </a>
                         </div>
                     </section>
@@ -240,8 +237,14 @@
                 <!-- Import language switcher script for multi-language support -->
                 <script src="js/language_switcher.js"></script>
 
+                <!-- Import calendar link generator -->
+                <script src="js/calendar.js"></script>
+
                 <!-- Import SweetAlert2 for nice info popups -->
                 <script src="js/sweetalert2.all.min.js"></script>
+
+                <!-- Prevent RSVP submissions after deadline -->
+                <script src="js/rsvp_closed.js"></script>
 
                 <script>
                     // Registers the click handler for the overnight info popup
@@ -260,24 +263,6 @@
                         }
                     }
                 </script>
-
-                <!-- <script>
-                    // Prevent form submission
-                    document.addEventListener("DOMContentLoaded", function () {
-                        const form = document.querySelector(".party-form");
-                        if (form) {
-                            form.addEventListener("submit", function (e) {
-                                e.preventDefault();
-                                Swal.fire({
-                                    title: translations.closedTitle,
-                                    html: "<div style='text-align:left;'>" + translations.closedBody + "</div>",
-                                    icon: "error",
-                                    confirmButtonText: "OK",
-                                });
-                            });
-                        }
-                    });
-                </script> -->
             </div>
         </div>
     </body>
