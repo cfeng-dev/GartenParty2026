@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# Netlify local settings
+.netlify/
+
+# Temporary files
+*.tmp
+*.bak
